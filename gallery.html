@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supercar gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Supercar gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <img src="https://cdn.hiconsumption.com/wp-content/uploads/2021/02/Supercars-Youve-Never-Heard-Of-0-Hero-1074x711.jpg" alt="Car 2" onclick="highlight(this)" />
+      <img src="https://www.goodwood.com/globalassets/.road--racing/road/news/2022/3-march/list-best-american-supercars/best_american_supercars_goodwood_01032022_09.jpg?crop=(0" alt="Car 3" onclick="highlight(this)" />
+      <img src="https://tse2.mm.bing.net/th/id/OIP.WTulE0T2bYH0aD-UBMBYmQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Car 4" onclick="highlight(this)" />
+    </div>
+
+    <div>
+      <label for="comment">Leave a commente:</label>
+      <input type="text" id="comment" onchange="showThanks()" placeholder="Type something cool..." />
+      <p id="thanksMessage"></p>
+    </div>
+
+    <div>
+      <button onclick="toggleGallery()">Toggle Gallery</button>
+    </div>
+
+    <div class="fun-fact">
+      <h3>Fun fact:</h3>
+      <p>The Lamborghini aventador was named after a legendary bull.</p>
+    </div>
+
+    <aside class="note">
+      <h4>Note:</h4>
+      <p>Click on any image to highlight it as your favorite!</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Speed. Style. Supercars.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
